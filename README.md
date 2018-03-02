@@ -16,4 +16,6 @@ dotnet new mvc --auth Individual -o TodoMvc
 cd TodoMvc
 dotnet run
 dotnet build
+
+dotnet add package Humanizer
 ---
