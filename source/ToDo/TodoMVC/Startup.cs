@@ -36,7 +36,7 @@ namespace TodoMVC
             // Add application services.
             services.AddTransient<IEmailSender, EmailSender>();
 
-            services.AddSingleton<ITodoItemService, FakeToDoItemService>();
+            services.AddSingleton<ITodoItemService, TodoItemService>();
 
             services.AddMvc();
         }
