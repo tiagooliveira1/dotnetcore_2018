@@ -8,11 +8,11 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using TodoMVC.Data;
-using TodoMVC.Models;
-using TodoMVC.Services;
+using TodoMvc.Data;
+using TodoMvc.Models;
+using TodoMvc.Services;
 
-namespace TodoMVC
+namespace TodoMvc
 {
     public class Startup
     {
@@ -36,7 +36,17 @@ namespace TodoMVC
             // Add application services.
             services.AddTransient<IEmailSender, EmailSender>();
 
-            services.AddSingleton<ITodoItemService, TodoItemService>();
+            //services.AddSingleton<ITodoItemService, TodoItemService>();
+            services.AddScoped<ITodoItemService, TodoItemService>();
+
+            
+
+            services.AddAuthentication().AddGoogle(googleOptions =>
+            {
+                googleOptions.ClientId = Configuration["Authentication:Google:ClientId"];
+                googleOptions.ClientSecret = Configuration["Authentication:Google:ClientSecret"];
+            });
+
 
             services.AddMvc();
         }

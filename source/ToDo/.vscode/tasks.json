@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/TDS171A_2018_1_Des_Web/source/Todo/TodoMvc/TodoMvc.csproj"
+                "${workspaceFolder}/TodoMvc/TodoMvc.csproj"
             ],
             "problemMatcher": "$msCompile"
         }

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using TodoMVC.Models;
+using TodoMvc.Models;
 
-namespace TodoMVC.Data
+namespace TodoMvc.Data
 {
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
@@ -23,6 +23,6 @@ namespace TodoMVC.Data
             // Add your customizations after calling base.OnModelCreating(builder);
         }
 
-        public DbSet<ToDoItem> Items { get; set; }
+        public DbSet<TodoItem> Items { get; set; }
     }
 }

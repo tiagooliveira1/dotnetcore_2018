@@ -1,30 +1,25 @@
-@model TodoMVC.Models.View.ToDoViewModel
+@model TodoMvc.Models.View.TodoViewModel
 @using Humanizer
 
 @{
     ViewData["Title"] = "Manage your todo list";
 }
 
-<div class="panel panel-defaul todo-panel">
+<div class="panel panel-default todo-panel">
     <div class="panel-heading">@ViewData["Title"]</div>
     <table class="table table-hover">
         <thead>
             <tr>
                 <th></th>
-                <th>
-                    Item
-                </th>
-                <th>
-                    Due
-                </th>
+                <th>Item</th>
+                <th>Due</th>
             </tr>
         </thead>
         <tbody>
-            @foreach(var item in Model.Items)
-            {
+            @foreach(var item in Model.Items) {
                 <tr>
                     <td>
-                        <input type="checkbox" name="@item.Id" value="true" class="done-checkbox />"
+                        <input type="checkbox" name="@item.Id" value="true" class="done-checkbox">
                     </td>
                     <td>@item.Title</td>
                     <td>@item.DueAt.Humanize()</td>
@@ -36,7 +31,11 @@
         <form>
             <div id="add-item-error" class="text-danger"></div>
             <label for="add-item-title">Add a new item:</label>
-            <input id="add-item-title" />
+            <input id="add-item-title"/>
+
+            <label for="add-item-title">Date:</label>
+            <input id="add-item-date" />
+
             <button type="button" id="add-item-button">Add</button>
         </form>
     </div>

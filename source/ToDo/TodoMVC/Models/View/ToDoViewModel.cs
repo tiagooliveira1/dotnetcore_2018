@@ -1,10 +1,7 @@
 using System.Collections.Generic;
 
-namespace TodoMVC.Models.View
-{
-    public class ToDoViewModel
-    {
-        public IEnumerable<ToDoItem> Items { get; set; }
-        
+namespace TodoMvc.Models.View {
+    public class TodoViewModel {
+        public IEnumerable<TodoItem> Items {get; set;}
     }
 }

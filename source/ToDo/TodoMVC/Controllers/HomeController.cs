@@ -4,9 +4,9 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using TodoMVC.Models;
+using TodoMvc.Models;
 
-namespace TodoMVC.Controllers
+namespace TodoMvc.Controllers
 {
     public class HomeController : Controller
     {

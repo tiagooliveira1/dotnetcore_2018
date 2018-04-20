@@ -1,21 +1,10 @@
-# dotnetcore_2018
-Códigos da disciplina
+<h1>Injeção de Pedendência</h1>
 
----
-
-mkdir source
-cd source
-
-mkdir ToDo
-cd ToDo/
----
-
----
-dotnet new mvc --auth Individual -o TodoMvc
-
-cd TodoMvc
-dotnet run
-dotnet build
-
-dotnet add package Humanizer
----
+Segundo Wikipedia, a definição de dependência é 
+<blockquote>
+  <p>
+    Injeção de dependência (Dependency Injection, em inglês) é um padrão de desenvolvimento de programas de 
+	computadores utilizado quando é necessário manter baixo o nível de acoplamento entre diferentes módulos de um sistema. 
+  </p>
+  
+</blockquote>

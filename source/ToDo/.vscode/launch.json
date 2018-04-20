@@ -10,9 +10,9 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceFolder}/TDS171A_2018_1_Des_Web/source/Todo/TodoMvc/bin/Debug/netcoreapp2.0/TodoMvc.dll",
+            "program": "${workspaceFolder}/TodoMvc/bin/Debug/netcoreapp2.0/TodoMvc.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/TDS171A_2018_1_Des_Web/source/Todo/TodoMvc",
+            "cwd": "${workspaceFolder}/TodoMvc",
             "stopAtEntry": false,
             "internalConsoleOptions": "openOnSessionStart",
             "launchBrowser": {

@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace TodoMVC.Models.AccountViewModels
+namespace TodoMvc.Models.AccountViewModels
 {
     public class ExternalLoginViewModel
     {
